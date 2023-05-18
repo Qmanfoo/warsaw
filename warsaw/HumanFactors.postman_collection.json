@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "23d98ec0-c494-4e35-af22-dc05c083a19a",
+		"name": "HumanFactors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12505539"
+	},
+	"item": [
+		{
+			"name": "testConnect",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/api/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getprofile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/api/getuserprofile?username=QUINN",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getuserprofile"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "QUINN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "languages",
+							"value": "EN",
+							"type": "text"
+						},
+						{
+							"key": "flairs",
+							"value": "Streamer,Content Creator",
+							"type": "text"
+						},
+						{
+							"key": "blurp",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "availability-weekdays-days",
+							"value": "0,1,2,3,4",
+							"type": "text"
+						},
+						{
+							"key": "availability-weekdays-times",
+							"value": "0,1,2",
+							"type": "text"
+						},
+						{
+							"key": "availability-weekend-days",
+							"value": "5,6",
+							"type": "text"
+						},
+						{
+							"key": "availability-weekend-times",
+							"value": "0,1,2",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "QUINN",
+							"type": "text"
+						},
+						{
+							"key": "pronouns",
+							"value": "he/him",
+							"type": "text"
+						},
+						{
+							"key": "discordUsername",
+							"value": "foobar1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/updateuser",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"updateuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateagming",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "communication",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "matchingPreference",
+							"value": "any",
+							"type": "text"
+						},
+						{
+							"key": "playstyle-approach",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "playstyle-reaction",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "playstyle-setting",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "rank",
+							"value": "Iron",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "NA",
+							"type": "text"
+						},
+						{
+							"key": "roles",
+							"value": "Controller,Initiator",
+							"type": "text"
+						},
+						{
+							"key": "platforms",
+							"value": "pc",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "RYAN",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/updateagming",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"updateagming"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getuserscores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/api/getuserscores?username=QUINN",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getuserscores"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "QUINN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addmatch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/addmatch?username=JOSEPH&match=QUINN",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"addmatch"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "JOSEPH"
+						},
+						{
+							"key": "match",
+							"value": "QUINN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletematch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/deletematch?username=JOSEPH&match=QUINN",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"deletematch"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "JOSEPH"
+						},
+						{
+							"key": "match",
+							"value": "QUINN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getmatches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/api/getmatches?username=QUINN",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getmatches"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "QUINN"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
